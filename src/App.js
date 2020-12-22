@@ -1,23 +1,46 @@
 import logo from './logo.svg';
+import React, { useState } from 'react';
+import Button from './components/Button/Button';
+import DialogBox from './components/DialogBox/DialogBox';
 import './App.css';
 
 function App() {
+  const [showdialog, setShowDialog] = useState(false);
+
+  const showDialogFunction = () => {
+    setShowDialog(!showdialog);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      {showdialog === false
+        ? <Button
+          name={'Dialog'}
+          color1={'rgb(80, 80, 161)'}
+          color2={'white'}
+          // marginLeftValue={'160px'}
+          marginLeftValue={'0px'}
+          borderRadius={'25px'}
+          onClick={showDialogFunction}
         >
-          Learn React
-        </a>
-      </header>
+        </Button>
+        : ''
+
+      }
+      {/* <DialogBox
+        DialogTitle={'Confirm Message'}
+        DilogBodyContent={'Download the current .mp3 file?'}
+        DisplayStatus={showdialog}
+      ></DialogBox> */}
+
+      {showdialog
+        ? <DialogBox
+          DialogTitle={'Confirm Message'}
+          DilogBodyContent={'Download the current .mp3 file?'}
+          showDialogFunction={showDialogFunction}
+        ></DialogBox>
+        : ''
+      }
     </div>
   );
 }

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.DialogBox {
+    font-family: 'Montserrat', sans-serif;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border:  1px solid #c4c4c4;
+    margin-left: 20px;
+    margin-top: 5px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 10px 10px 15px #ccc;
+    border-radius: 5px;
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in;
+}
+
+/* .DialogBox.Hidden {
+    width: 0px;
+    height: 0px;
+} */
+
+.DialogTitle {
+    padding-top: 15px;
+    padding-left: 10px;
+    color: black;
+    height: 40px;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 2px solid #c4c4c4;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-around;
+    text-align: center;
+    display: flex;
+}
+
+.DialogBodyContainer {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background-color: white;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    justify-content: center;
+}
+.DialogBody {
+    padding-top: 15px;
+    padding-left: 20px;
+    height: 40px;
+}
+
+.DialogButtonField {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
