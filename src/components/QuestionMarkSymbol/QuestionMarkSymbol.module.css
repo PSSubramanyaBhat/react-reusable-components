@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+.QuestionMarkSymbol {
+    height: 17px;
+    width: 17px;
+    margin-left: 3px;
+    margin-top: -1px;
+    border-radius: 30px;
+    background-color: #1068bf;
+}
+
+.QuestionMark {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}

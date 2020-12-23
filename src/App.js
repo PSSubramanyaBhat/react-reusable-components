@@ -33,14 +33,17 @@ function App() {
         DisplayStatus={showdialog}
       ></DialogBox> */}
 
+
       {showdialog
         ? <DialogBox
           DialogTitle={'Confirm Message'}
           DilogBodyContent={'Download the current .mp3 file?'}
+          textAlignment='center'
+          Justify='center'
           Button1_Text={'Yes'}
           Button2_Text={'Cancel'}
           showDialogFunction={showDialogFunction}
-        ></DialogBox>
+        />
         : ''
       }
     </div>

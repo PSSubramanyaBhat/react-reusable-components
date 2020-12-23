@@ -26,18 +26,21 @@ export const Input_Dialog_Box = () => (
                     labelName="Username"
                     hintText="Enter your name"
                     inputType="text"
+                    toolTopRequired="false"
                 ></InputFormField>
                 <br></br>
                 <InputFormField
                     labelName="Password"
                     hintText="Enter your password (atleast 8 characters)"
                     inputType="password"
+                    toolTopRequired="true"
                 ></InputFormField>
                 <br></br>
                 <InputFormField
                     labelName="Confirm Password"
                     hintText="Enter your password again"
                     inputType="password"
+                    toolTopRequired="false"
                 ></InputFormField>
                 <br></br>
             </div>
