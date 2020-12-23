@@ -13,7 +13,7 @@ const Button = ({ name, marginLeftValue, borderRadius, color1, color2, onClick }
                 color: color2,
                 borderColor: color2,
                 borderWidth: '1px',
-                borderStyle: 'solid'
+                borderStyle: 'solid',
             }
             }
         >

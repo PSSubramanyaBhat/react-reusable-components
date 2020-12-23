@@ -5,7 +5,7 @@ import styles from './DialogBox.module.css';
 import CloseButton from '../CloseButton/CloseButton';
 import cn from 'classnames';
 
-const DialogBox = ({ DialogTitle, DilogBodyContent, showDialogFunction }) => {
+const DialogBox = ({ DialogTitle, DilogBodyContent, Button1_Text, Button2_Text, showDialogFunction, textAlignment, Justify }) => {
     // const dialogBoxClassNames = cn(styles.DialogBox, { [styles.DialogBoxHidden]: showdialog === false});
 
     const confirmDialogFunction = () => {
@@ -32,7 +32,13 @@ const DialogBox = ({ DialogTitle, DilogBodyContent, showDialogFunction }) => {
 
             {/* FIX THIS: Only 11 divs are being able to be fit in the below DialogBodyContainer, despite using oveflow:auto*/}
             {/* cn(styles.Menu, { [styles.Active]: active }); */}
-            <div className={styles.DialogBodyContainer}>
+            <div
+                className={styles.DialogBodyContainer}
+                style={{
+                    justifyContent: Justify,
+                    textAlign: textAlignment
+                }}
+            >
                 <div className={styles.DialogBody}>
                     {DilogBodyContent}
                 </div>
@@ -48,7 +54,7 @@ const DialogBox = ({ DialogTitle, DilogBodyContent, showDialogFunction }) => {
 
             <div className={styles.DialogButtonField}>
                 <Button
-                    name={'Yes'}
+                    name={Button1_Text}
                     color1={'rgb(80, 80, 161)'}
                     color2={'white'}
                     marginLeftValue={'0px'}
@@ -56,7 +62,7 @@ const DialogBox = ({ DialogTitle, DilogBodyContent, showDialogFunction }) => {
                     onClick={confirmDialogFunction}
                 ></Button>
                 <Button
-                    name={'Cancel'}
+                    name={Button2_Text}
                     color1={'white'}
                     color2={'rgb(80, 80, 161)'}
                     marginLeftValue={'0px'}

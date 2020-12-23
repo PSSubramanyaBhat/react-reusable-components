@@ -45,11 +45,11 @@
     color: black;
     padding-top: 15px;
     padding-bottom: 15px;
-    text-align: center;
-    justify-content: center;
+    /* text-align: center; */
+    /* justify-content: center; */
 }
 .DialogBody {
-    padding-top: 15px;
+    /* padding-top: 15px; */
     padding-left: 20px;
     height: 40px;
 }
