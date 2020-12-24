@@ -1,3 +1,32 @@
-.ErrorSymbol {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+.ErrorSymbolMark {
+    height: 17px;
+    width: 17px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #ec2c0a;
+}
 
+
+.ErrorMark {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+}
+.ErrorMark:hover {
+    opacity: 1;
+}
+.ErrorMark:before, .ErrorMark:after {
+    position: absolute;
+    content: ' ';
+    height: 10px;
+    width: 2px;
+    background-color: #fff;
+}
+.ErrorMark:before {
+    transform: rotate(45deg);
+}
+.ErrorMark:after {
+    transform: rotate(-45deg);
 }

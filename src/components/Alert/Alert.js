@@ -2,13 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Alert.module.css';
 import QuestionMarkSymbol from '../QuestionMarkSymbol/QuestionMarkSymbol';
-
+import WarningSymbol from '../WarningSymbol/WarningSymbol';
+import NoticeSymbol from '../NoticeSymbol/NoticeSymbol';
+import SuccessSymbol from '../SuccessSymbol/SuccessSymbol';
+import ErrorSymbol from '../ErrorSymbol/ErrorSymbol';
 const Alert = ({ alertType }) => {
     return (
         <div className={styles.Alert}>
             {alertType === "error"
                 ? <div className={styles.ErrorAlertBox}>
-                    <QuestionMarkSymbol
+                    <ErrorSymbol
                         margintop={'12px'}
                         marginleft={'10px'}
                         marginright={'0px'}
@@ -18,7 +21,7 @@ const Alert = ({ alertType }) => {
                 : ''}
             {alertType === "success"
                 ? <div className={styles.SuccessAlertBox}>
-                    <QuestionMarkSymbol
+                    <SuccessSymbol
                         margintop={'12px'}
                         marginleft={'10px'}
                         marginright={'0px'}
@@ -28,8 +31,8 @@ const Alert = ({ alertType }) => {
                 : ''}
             {alertType === "warning"
                 ? <div className={styles.WarningAlertBox}>
-                    <QuestionMarkSymbol
-                        margintop={'12px'}
+                    <WarningSymbol
+                        margintop={'10px'}
                         marginleft={'10px'}
                         marginright={'0px'}
                     />
@@ -38,7 +41,7 @@ const Alert = ({ alertType }) => {
                 : ''}
             {alertType === "notice"
                 ? <div className={styles.NoticeAlertBox}>
-                    <QuestionMarkSymbol
+                    <NoticeSymbol
                         margintop={'12px'}
                         marginleft={'10px'}
                         marginright={'0px'}

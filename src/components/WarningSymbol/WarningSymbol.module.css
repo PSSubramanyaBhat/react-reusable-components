@@ -1,3 +1,18 @@
 .WarningSymbol {
-
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 18px solid rgb(255, 187, 0);
 }
+
+.WarningIcon {
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+    margin-left: -2px;
+    padding-top: 3px;
+    font-weight: 600;
+}
+
+/* margintop, marginleft, marginright */

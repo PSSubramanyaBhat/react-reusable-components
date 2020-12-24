@@ -2,11 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './NoticeSymbol.module.css';
 
-const NoticeSymbol = props => {
-return (
-<div className={styles.NoticeSymbol }>
-</div>
-);
+const NoticeSymbol = ({ margintop, marginleft, marginright }) => {
+    return (
+        <div className={styles.NoticeSymbolMark}
+            style={{
+                marginTop: margintop,
+                marginRight: marginright,
+                marginLeft: marginleft
+            }}
+        >
+            <div className={styles.NoticeSymbol}>
+                i
+            </div>
+        </div>
+    );
 };
 
 

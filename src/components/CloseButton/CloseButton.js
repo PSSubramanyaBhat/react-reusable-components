@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './CloseButton.module.css';
 
-const CloseButton = ({ showDialogFunction, marginleft, margintop }) => {
+const CloseButton = ({ showDialogFunction, marginleft, margintop}) => {
     return (
         <div
             className={styles.CloseButton}
@@ -12,7 +12,7 @@ const CloseButton = ({ showDialogFunction, marginleft, margintop }) => {
                 // top: top
                 // paddingRight: padright,
                 paddingTop: margintop,
-                marginLeft: marginleft
+                marginLeft: marginleft,
             }}
         >
         </div>

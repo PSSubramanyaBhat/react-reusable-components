@@ -1,3 +1,41 @@
 .SuccessSymbol {
+    height: 17px;
+    width: 17px;
+    border-radius: 30px;
+    text-align: center;
+    background-color: rgb(49, 145, 49);
+}
 
+.SuccessSymbolMark {
+    position: relative;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-left: -12px;
+    margin-top: -6px;
+    text-align: center;
+}
+
+.SuccessSymbolMark::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 50%;
+    width: 3px;
+    background-color: #fff;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+.SuccessSymbolMark::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
 }
