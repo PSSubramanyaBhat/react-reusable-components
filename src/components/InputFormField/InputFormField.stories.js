@@ -1,7 +1,7 @@
 import InputFormField from './InputFormField';
 
 export default {
-    title: 'Pokemon/InputFormField',
+    title: 'Components/InputFormField',
     component: InputFormField,
 };
 
@@ -10,6 +10,7 @@ export const InputFormField_1 = () => (
         labelName="Name"
         hintText="Enter your name"
         inputType="text"
-        toolTopRequired="false"
+        // toolTopRequired="false"
+        toolTopRequired="true"
     />
 );

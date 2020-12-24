@@ -1,8 +1,9 @@
 import InputFormField from '../InputFormField/InputFormField';
 import DialogBox from './DialogBox';
+import React, { useState } from 'react';
 
 export default {
-    title: 'Pokemon/DialogBox',
+    title: 'Components/DialogBox',
     component: DialogBox,
 };
 
@@ -18,6 +19,7 @@ export const DialogBox_1 = () => (
 );
 
 export const Input_Dialog_Box = () => (
+    
     <DialogBox
         DialogTitle={'Registration Form'}
         DilogBodyContent={

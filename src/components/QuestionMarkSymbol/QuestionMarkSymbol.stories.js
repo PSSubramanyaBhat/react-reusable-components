@@ -1,7 +1,7 @@
 import QuestionMarkSymbol from './QuestionMarkSymbol';
 
 export default {
-title: 'Pokemon/QuestionMarkSymbol',
+title: 'Components/QuestionMarkSymbol',
 component: QuestionMarkSymbol,
 };
 

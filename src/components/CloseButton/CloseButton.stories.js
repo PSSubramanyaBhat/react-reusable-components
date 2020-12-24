@@ -1,10 +1,10 @@
 import CloseButton from './CloseButton';
 
 export default {
-title: 'Pokemon/CloseButton',
-component: CloseButton,
+    title: 'Components/CloseButton',
+    component: CloseButton,
 };
 
 export const CloseButton_1 = () => (
-<CloseButton />
+    <CloseButton />
 );

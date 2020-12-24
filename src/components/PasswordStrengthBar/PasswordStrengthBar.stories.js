@@ -1,10 +1,18 @@
 import PasswordStrengthBar from './PasswordStrengthBar';
 
 export default {
-title: 'Pokemon/PasswordStrengthBar',
-component: PasswordStrengthBar,
+    title: 'Components/PasswordStrengthBar',
+    component: PasswordStrengthBar,
 };
 
-export const PasswordStrengthBar_1 = () => (
-<PasswordStrengthBar />
+export const WeakPasswordStrengthBar = () => (
+    <PasswordStrengthBar passwordStrength={'weak'} />
+);
+
+export const ModeratePasswordStrengthBar = () => (
+    <PasswordStrengthBar passwordStrength={'moderate'} />
+);
+
+export const StrongPasswordStrengthBar = () => (
+    <PasswordStrengthBar passwordStrength={'strong'} />
 );

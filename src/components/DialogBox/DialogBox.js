@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import Button from '../Button/Button';
 import styles from './DialogBox.module.css';
@@ -7,7 +7,7 @@ import cn from 'classnames';
 
 const DialogBox = ({ DialogTitle, DilogBodyContent, Button1_Text, Button2_Text, showDialogFunction, textAlignment, Justify }) => {
     // const dialogBoxClassNames = cn(styles.DialogBox, { [styles.DialogBoxHidden]: showdialog === false});
-
+    
     const confirmDialogFunction = () => {
         showDialogFunction();
     }
@@ -25,8 +25,8 @@ const DialogBox = ({ DialogTitle, DilogBodyContent, Button1_Text, Button2_Text, 
                 {DialogTitle}
                 <CloseButton
                     showDialogFunction={showDialogFunction}
-                    right={'20px'}
-                    top={'25px'}
+                    margintop={'10px'}
+                    marginleft={'330px'}
                 ></CloseButton>
             </div>
 
